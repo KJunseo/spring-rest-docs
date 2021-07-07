@@ -1,0 +1,146 @@
+ifndef::snippets[]
+:snippets: ./build/generated-snippets
+endif::[]
+
+= REST API Document
+:doctype: book
+:icons: font
+:source-highlighter: highlightjs
+:toc: left
+:toclevels: 3
+:sectlinks:
+:docinfo: shared-head
+
+[[introduction]]
+== Introduction
+코드 봐줘 👀
+
+누구나 편하고 쉽게 리뷰어를 만날 수 있는 환경을 제공하는 서비스
+
+[[common]]
+== Common
+
+=== Domain
+|===
+| 환경 | Domain
+
+| 개발서버
+| `https://aaaaaaaaaaa`
+
+| 운영서버
+| `https://aaaaaaaaaaa`
+|===
+
+=== Exception
+|===
+| 상태 코드 | 설명
+
+| 400
+| `잘못된 데이터`
+
+| 401
+| `권한 없음`
+|===
+
+&#160;
+
+== Member API
+
+&#160;
+
+== Review API
+
+[[new-reivew]]
+=== 새로운 리뷰 생성
+
+==== Request
+===== Request Header
+include::{snippets}/reviews/create/request-headers.adoc[]
+===== Request Fields
+include::{snippets}/reviews/create/request-fields.adoc[]
+===== Request HTTP Example
+include::{snippets}/reviews/create/http-request.adoc[]
+
+==== Response
+===== Response Header
+include::{snippets}/reviews/create/response-headers.adoc[]
+===== Response Fields
+===== Response HTTP Example
+include::{snippets}/reviews/create/http-response.adoc[]
+
+&#160;
+
+[[student-review-list]]
+=== 내가 요청한 리뷰 목록 조회
+
+==== Request
+===== Request Header
+include::{snippets}/reviews/student-search/request-headers.adoc[]
+===== Request Fields
+===== Request HTTP Example
+include::{snippets}/reviews/student-search/http-request.adoc[]
+
+==== Response
+===== Response Header
+include::{snippets}/reviews/student-search/response-fields.adoc[]
+===== Response Fields
+===== Response HTTP Example
+include::{snippets}/reviews/student-search/http-response.adoc[]
+
+&#160;
+
+[[teacher-review-list]]
+=== 내가 리뷰한 목록 조회
+
+==== Request
+===== Request Header
+===== Request Fields
+===== Request HTTP Example
+include::{snippets}/reviews/teacher-search/http-request.adoc[]
+
+==== Response
+===== Response Header
+include::{snippets}/reviews/teacher-search/response-fields.adoc[]
+===== Response Fields
+===== Response HTTP Example
+include::{snippets}/reviews/teacher-search/http-response.adoc[]
+
+&#160;
+
+[[review-detail]]
+=== 리뷰 상세 조회
+
+==== Request
+===== Request Header
+===== Request Parameters
+include::{snippets}/reviews/detail/path-parameters.adoc[]
+===== Request HTTP Example
+include::{snippets}/reviews/detail/http-request.adoc[]
+
+==== Response
+===== Response Header
+===== Response Fields
+include::{snippets}/reviews/detail/response-fields.adoc[]
+===== Response HTTP Example
+include::{snippets}/reviews/detail/http-response.adoc[]
+
+&#160;
+
+[[change-progress]]
+=== 리뷰 상태 변경
+
+==== Request
+===== Request Header
+include::{snippets}/reviews/change/request-headers.adoc[]
+===== Request Parameters
+include::{snippets}/reviews/change/path-parameters.adoc[]
+===== Request HTTP Example
+include::{snippets}/reviews/change/http-request.adoc[]
+
+==== Response
+===== Response Header
+===== Response Fields
+===== Response HTTP Example
+include::{snippets}/reviews/change/http-response.adoc[]
+
+&#160;

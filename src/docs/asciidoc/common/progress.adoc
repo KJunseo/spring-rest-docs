@@ -1,0 +1,10 @@
+ifndef::snippets[]
+:snippets: ./build/generated-snippets
+endif::[]
+
+= REST API Document
+:doctype: book
+:icons: font
+
+[[progress]]
+include::{snippets}/common/custom-response-fields-beneath-progresses.adoc[]
